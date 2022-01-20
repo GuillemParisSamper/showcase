@@ -4,7 +4,18 @@
    * --------------------------------------------------------------------------
    */
   
-   .showcase, .cesta{
+   .showcase, .cart{
        height: 25rem;
        width: 26rem;
+   }
+   .product{
+        border-radius: 0.5em;
+        border-style: outset;
+        border: 1px solid #d3d3d3;
+
+        background-color: #fff;
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        font-size: 1em;
    }
