@@ -12,8 +12,10 @@
         ev.preventDefault();
     }
 
-    function drop(ev){
+    function dropToCart(ev){
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
-        ev.target.appendChild(document.getElementById(data));
+        console.table(data);
+        //ev.target.appendChild(document.getElementById(data));
+        document.getElementById("cart").appendChild(document.getElementById(data));
     }
