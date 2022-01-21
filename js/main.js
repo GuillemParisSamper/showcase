@@ -31,5 +31,8 @@
             document.getElementById("price").innerHTML = totalPrice[0]+" "+ (Number(totalPrice[1]) + Number(elementPrice[1].innerHTML));
             //console.log( elementPrice[1].innerHTML +  );    
         }
+        const totalElements = document.getElementById("elements").innerHTML.split(" ");
+        var c = document.getElementById("cart").children.length
+        document.getElementById("elements").innerHTML = (totalElements[0]+" "+Number(c-1));
         //console.log(document.getElementById(data).parentNode.getAttribute("id"));    
     }
