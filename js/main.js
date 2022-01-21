@@ -12,18 +12,13 @@
         ev.preventDefault();
     }
 
-    function dropToCart(ev){
+    function drop(ev){
         ev.preventDefault();
         var data = ev.dataTransfer.getData("text");
-        console.table(data);
-        //ev.target.appendChild(document.getElementById(data));
-        document.getElementById("cart").appendChild(document.getElementById(data));
-    }
-
-    function dropToShowcase(ev){
-        ev.preventDefault();
-        var data = ev.dataTransfer.getData("text");
-        console.table(data);
-        //ev.target.appendChild(document.getElementById(data));
-        document.getElementById("showcase").appendChild(document.getElementById(data));
+        if (document.getElementById(data).parentNode.getAttribute("id")==="cart"){
+            document.getElementById("showcase").appendChild(document.getElementById(data));
+        }else{
+            document.getElementById("cart").appendChild(document.getElementById(data));
+        }
+        //console.log(document.getElementById(data).parentNode.getAttribute("id"));    
     }
