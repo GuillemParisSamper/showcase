@@ -19,3 +19,11 @@
         //ev.target.appendChild(document.getElementById(data));
         document.getElementById("cart").appendChild(document.getElementById(data));
     }
+
+    function dropToShowcase(ev){
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        console.table(data);
+        //ev.target.appendChild(document.getElementById(data));
+        document.getElementById("showcase").appendChild(document.getElementById(data));
+    }
