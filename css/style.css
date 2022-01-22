@@ -3,10 +3,10 @@
    * Showcase CSS
    * --------------------------------------------------------------------------
    */
-  
-   .showcase, .cart{
 
-       width: 26rem;
+   .showcase, .cart{
+      /* height: 24rem;
+       width: 26rem; */
    }
    .product{
         border-radius: 0.5em;

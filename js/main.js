@@ -15,21 +15,21 @@
     function drop(ev){
         ev.preventDefault();
         const data = ev.dataTransfer.getData("text");
+        const elementPrice = document.getElementById(data).childNodes;
+        const totalPrice = document.getElementById("price").innerHTML.split(" ");
+        const price = elementPrice[1].innerHTML.split("€")
         if (document.getElementById(data).parentNode.getAttribute("id")==="cart"){
             document.getElementById("showcase").appendChild(document.getElementById(data));
-            const elementPrice = document.getElementById(data).childNodes;
-            //console.log (elementPrice[1].innerHTML);
-            const totalPrice = document.getElementById("price").innerHTML.split(" ");
-            //console.log(totalPrice[1]);
-            document.getElementById("price").innerHTML = totalPrice[0]+" "+ (Number(totalPrice[1]) - Number(elementPrice[1].innerHTML));
+            //const elementPrice = document.getElementById(data).childNodes;
+            //const totalPrice = document.getElementById("price").innerHTML.split(" ");
+            //const price = elementPrice[1].innerHTML.split("€")
+            document.getElementById("price").innerHTML = totalPrice[0]+" "+ (Number(totalPrice[1]) - Number(price[0]) + " €");
         }else{
             document.getElementById("cart").appendChild(document.getElementById(data));
-            const elementPrice = document.getElementById(data).childNodes;
-            //console.log (elementPrice[1].innerHTML);
-            const totalPrice = document.getElementById("price").innerHTML.split(" ");
-            //console.log(totalPrice[1]);
-            document.getElementById("price").innerHTML = totalPrice[0]+" "+ (Number(totalPrice[1]) + Number(elementPrice[1].innerHTML));
-            //console.log( elementPrice[1].innerHTML +  );    
+            //const elementPrice = document.getElementById(data).childNodes;
+            //const totalPrice = document.getElementById("price").innerHTML.split(" ");
+            //const price = elementPrice[1].innerHTML.split("€")
+            document.getElementById("price").innerHTML = totalPrice[0]+" "+ (Number(totalPrice[1]) + Number(price[0]) + " €"); 
         }
         const totalElements = document.getElementById("elements").innerHTML.split(" ");
         var c = document.getElementById("cart").children.length
