@@ -1,24 +1,37 @@
-  /**
+/**
    * --------------------------------------------------------------------------
    * Showcase CSS
    * --------------------------------------------------------------------------
    */
 
-   .showcase, .cart{
-      /* height: 24rem;
-       width: 26rem; */
-   }
-   .product{
-        border-radius: 0.5em;
-        border-style: outset;
-        border: 1px solid #d3d3d3;
+.showcase,
+.cart {
+  /* height: 24em;
+       width: 26em; */
+  min-height: 25%;
+  
+}
+.product {
+  border-radius: 0.5em;
+  border-style: outset;
+  border: 1px solid #d3d3d3;
 
-        background-color: #fff;
-        display: inline-block;
-        width: 2em;
-        height: 2em;
-        font-size: 1em;
+  background-color: #fff;
+  display: inline-block;
+  width: 2.4em;
+  height: 1.8em;
+  font-size: 1.4em;
 
-        text-align: center;
-        vertical-align: middle;
-   }
+  text-align: center;
+  vertical-align: middle;
+}
+.h-15 {
+  height: 15% !important;
+}
+.h-85 {
+  height: 85% !important;
+}
+.badge{
+  padding-right: -60em !important;
+}
+
