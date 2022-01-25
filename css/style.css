@@ -40,6 +40,11 @@ body{
   text-align: center;
   vertical-align: middle;
 }
+.product span{
+  margin-left: -10px !important;
+  color: #F90716 !important;
+  text-shadow: 3px 3px 5px #fff !important;
+}
 h1, h2{
   text-shadow: 5px 5px 8px #fff;
 }
