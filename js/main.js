@@ -19,7 +19,7 @@
         const elementPrice = document.getElementById(data).childNodes;
         const totalPrice = document.getElementById("price").innerHTML.split(" ");
         const price = elementPrice[1].innerHTML.split("€");
-        console.log(document.getElementById(data).parentNode.getAttribute("id"))
+        //console.log(document.getElementById(data).parentNode.getAttribute("id"))
         if (document.getElementById(data).parentNode.getAttribute("id")=="cart"){
             document.getElementById("showcase").appendChild(document.getElementById(data));
             document.getElementById("price").innerHTML = `${totalPrice[0]} ${Number(totalPrice[1]) - Number(price[0])} €`;

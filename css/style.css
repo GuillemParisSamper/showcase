@@ -10,14 +10,21 @@ body{
   background-image: url("../img/cart-yellow-leaf.jpg");
   background-repeat: no-repeat; 
   background-size: cover;
+  overflow: hidden;
 }
 .showcase{
   background-image: url("../img/showcase-bg.png");
   background-position: 0px 15px;
   background-repeat: repeat;
   background-size: 300px 88px;
+  overflow-y: scroll !important;
+  background-attachment: scroll !important;
 }
 .cart {
+  background-image: url("../img/cart-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+
 }
 .product {
   border-radius: 0.5em;
